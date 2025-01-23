@@ -175,9 +175,13 @@ function changeLanguage(lang) {
     if (lang === "en") {
       document.getElementById("lang-en").style.display = "none";
       document.getElementById("lang-ar").style.display = "inline-block";
+      document.body.style.direction = "ltr";
+      document.body.style.textAlign = "left"; 
     } else if (lang === "ar") {
       document.getElementById("lang-ar").style.display = "none";
       document.getElementById("lang-en").style.display = "inline-block";
+      document.body.style.direction = "rtl";
+      document.body.style.textAlign = "right"; 
     }
   } else {
     console.error(`Language "${lang}" not supported.`);

@@ -51,6 +51,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.nav-bg{
+  background-color: #162a40;
+}
 
 .nav-links {
   list-style: none;
@@ -148,6 +151,7 @@ body[dir="rtl"] .contact-btn a {
 .hero-container {
   position: relative;
   z-index: 999;
+  margin-top: 70px;
 }
 .sub-hero-container {
   display: flex;
@@ -346,21 +350,33 @@ body[dir="rtl"] .contact-btn a {
 /* Brands Section */
 .hero-brands {
   display: flex;
-  overflow-x: auto;
   scroll-behavior: smooth; /* For smooth scrolling */
   gap: 10px; /* Space between images */
-  padding: 10px; /* Optional padding */
+  padding: 20px 50px;
   gap: 10px;
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+  align-items: center;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
+  overflow: hidden;
+  position: relative;
+}
+.gallery-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  scroll-behavior: smooth; /* For smooth scrolling */
+  width: 100%;
+  justify-content: space-around;
 }
 
 .hero-brands img {
   flex-shrink: 0; /* Prevent images from shrinking */
-  width: 100px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional styling */
-  opacity: 0.8;
-  height: 60px;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* width: 100%; */
+  height: fit-content; /* Maintain aspect ratio */
+  object-fit: cover;
 }
 .hero-brands::-webkit-scrollbar-thumb {
   background: #888; /* Scrollbar color */
@@ -369,14 +385,29 @@ body[dir="rtl"] .contact-btn a {
 .hero-brands::-webkit-scrollbar {
   height: 6px; /* Scrollbar height */
 }
-
-.hero-brands img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
 .brand-img {
-  width: 100%;
+  /* width: 100%; */
+  /* opacity: 1; */
   max-width: 150px;
+}
+/* Auto-scroll animation */
+@keyframes auto-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1050px) {
+  .gallery-wrapper {
+    animation: auto-scroll 15s linear infinite;
+  }
+
+  .hero-brands:hover .gallery-wrapper {
+    animation-play-state: paused; /* Pause animation on hover for better UX */
+  }
 }
 
 /* Responsive Design */
@@ -396,12 +427,9 @@ body[dir="rtl"] .contact-btn a {
   }
 
   .hero-brands {
-    gap: 2px;
+    padding: 20px;
   }
 
-  .hero-brands img {
-    width: 100%;
-  }
 }
 
 /* General Section Styles */
@@ -451,7 +479,7 @@ body[dir="rtl"] .contact-btn a {
 
 .outsourcing-section .text-container {
   flex: 1;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   text-align: left;
 }
 
@@ -494,7 +522,7 @@ body[dir="rtl"] .contact-btn a {
 .metrics-and-work-section {
   /* background: linear-gradient(135deg, #ade1e5 50%, #162a40 50%); */
   color: #333;
-  padding: 50px 20px;
+  padding: 50px 0;
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -605,14 +633,17 @@ body[dir="rtl"] .contact-btn a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  
   .metrics-container {
     grid-template-columns: 1fr;
     align-items: center;
+    padding: 20px 20px;
   }
 
   .how-we-work-container {
     flex-direction: column;
     gap: 30px;
+    padding: 100px 20px;
   }
 
   .how-we-work-text,
@@ -625,7 +656,6 @@ body[dir="rtl"] .contact-btn a {
 .business-possibility-section {
   /* background: linear-gradient(135deg, #162a40 50%, #ade1e5 50%); */
   color: #333;
-  padding: 80px 20px;
   font-family: "Roboto", Arial, sans-serif;
   position: relative;
   padding: 0 50px;
@@ -729,6 +759,9 @@ body[dir="rtl"] .contact-btn a {
   .image-content img {
     max-width: 100%;
   }
+  .business-possibility-section{
+    padding: 0 20px;
+  }
 }
 /* Services Section */
 .services-section {
@@ -805,7 +838,6 @@ body[dir="rtl"] .contact-btn a {
 /* Vision Section */
 .vision-section {
   /* background: linear-gradient(135deg, #162a40 50%, #ade1e5 50%); */
-  padding: 80px 50px;
   color: #333;
   font-family: "Roboto", Arial, sans-serif;
   position: relative;
@@ -907,7 +939,7 @@ body[dir="rtl"] .contact-btn a {
     text-align: center;
   }
   .vision-section .container {
-    padding-top: 0px;
+    padding: 100px 20px;
   }
 
   .image-wrapper {
@@ -915,7 +947,7 @@ body[dir="rtl"] .contact-btn a {
     height: 150px;
   }
 
-  .text-content h2 {
+  h2 {
     font-size: 28px;
   }
 }
@@ -923,7 +955,6 @@ body[dir="rtl"] .contact-btn a {
 /* Vision Section */
 .vision-section {
   /* background: linear-gradient(135deg, #162a40 50%, #ade1e5 50%); */
-  padding: 60px 20px;
   color: #333;
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -1007,6 +1038,9 @@ body[dir="rtl"] .contact-btn a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .vision-section .container{
+
+  }
   .content {
     flex-direction: column;
     text-align: center;
@@ -1068,7 +1102,7 @@ body[dir="rtl"] .contact-btn a {
 }
 
 .mechanism-help-section h3 {
-  font-size: 18px;
+  font-size: 13px;
   color: #00c3ff;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1145,6 +1179,9 @@ body[dir="rtl"] .contact-btn a {
   .mechanism-services-container {
     grid-template-columns: 1fr;
   }
+  .mechanism-help-section h2{
+    font-size: 28px;
+  }
 }
 
 /* Contact Section */
@@ -1163,6 +1200,11 @@ body[dir="rtl"] .contact-btn a {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .contact-section{
+    padding: 0 20px;
+  }
 }
 
 .info-box {
@@ -1288,8 +1330,8 @@ body[dir="rtl"] .contact-btn a {
 /* Contact Map Section */
 .contact-map-section {
   position: relative;
-  background-color: #f5f5f5;
-  padding: 60px 20px;
+  /* background-color: #f5f5f5; */
+  /* padding: 60px 20px; */
   color: #333;
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -1319,10 +1361,10 @@ body[dir="rtl"] .contact-btn a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  margin-bottom: 40px;
 }
 .social-container h3{
-  color: #fff;
+  color: #28293E;;
   margin: 0;
 }
 
@@ -1331,7 +1373,6 @@ body[dir="rtl"] .contact-btn a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .social-links a {
@@ -1343,6 +1384,16 @@ body[dir="rtl"] .contact-btn a {
 
 .social-links a:hover {
   color: #0193c3;
+}
+
+@media screen and (max-width: 768px) {
+  .social-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-map-section{
+    padding: 20px;
+  }
 }
 
 /* Form Container */

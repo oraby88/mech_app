@@ -157,7 +157,7 @@
             </div>
           </div>
         </nav> -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top nav-bg">
           <div class="container-fluid">
             <!-- Logo -->
             <div class="logo">
@@ -184,8 +184,8 @@
                   <a class="nav-link" href="#outsourcing-section" data-lang="about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#services" data-lang="services"
-                    >Services</a
+                  <a class="nav-link" href="#howWeWork" data-lang="howWeWork"
+                    >How We Work</a
                   >
                 </li>
                 <li class="nav-item">
@@ -194,8 +194,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#howWeWork" data-lang="howWeWork"
-                    >How We Work</a
+                  <a class="nav-link" href="#services" data-lang="services"
+                    >Services</a
                   >
                 </li>
               </ul>
@@ -241,6 +241,7 @@
       </div>
 
       <div class="hero-brands">
+        <div class="gallery-wrapper">
         <img
           class="brand-img"
           src="img/brands/Coca-Cola_logo.svg.png"
@@ -258,16 +259,6 @@
         />
         <img
           class="brand-img"
-          src="img/brands/BP_Helios_logo.svg.png"
-          alt="BP Helios logo - Mechanism Group trusted brand partner"
-        />
-        <img
-          class="brand-img"
-          src="img/brands/medserv.png"
-          alt="MedServ logo - Mechanism Group trusted brand partner"
-        />
-        <img
-          class="brand-img"
           src="img/brands/Vodafone_Logo.png"
           alt="Vodafone_Logo - Mechanism Group trusted brand partner"
         />
@@ -275,7 +266,21 @@
           class="brand-img"
           src="img/brands/eni-logo-005CBDC522-seeklogo.com.png"
           alt="MedServ logo - Mechanism Group trusted brand partner"
+          style="height: 137px;"
         />
+        <img
+          class="brand-img"
+          src="img/brands/BP_Helios_logo.svg.png"
+          alt="BP Helios logo - Mechanism Group trusted brand partner"
+          style="height: 137px;"
+        />
+        <img
+          class="brand-img"
+          src="img/brands/medserv.png"
+          alt="MedServ logo - Mechanism Group trusted brand partner"
+        />
+        
+      </div>
         
       </div>
       <hr class="line">
@@ -318,7 +323,7 @@
           </div>
         </div>
         <div class="how-we-work-container">
-        <div class="d-flex justify-content-between align-items-start mb-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start mb-4">
           <div class="background2"></div>
           <div class="how-we-work-text">
             <h3 data-lang="howWeWork" class="section-title">How We Work</h3>
@@ -544,7 +549,7 @@
       </section>
 
       <section class="contact-map-section">
-        <div class="container">
+        
           <!-- Contact Form -->
           <div class="form-container">
             <h3 class="form-title">Get in Touch</h3>
@@ -557,13 +562,13 @@
           </div>
 
           <!-- Map Background -->
-          <div class="map-container">
+          <div class="map-container d-none d-md-block">
             <img src="img/map.png" alt="Map Location" />
             <div class="map-pin">
               <img src="img/pin.png" alt="location">
             </div>
           </div>
-        </div>
+        
       </section>
 
       <footer class="footer-section">
