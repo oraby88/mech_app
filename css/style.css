@@ -399,10 +399,8 @@ body[dir="rtl"] .contact-btn a {
 .hero-brands {
   flex: 0 0 100%;
 }
-@media screen and (max-width: 1200px) {
-  .hero-brands::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Edge */
-  }
+.hero-brands::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
 }
 
 /* Auto-scroll animation */
