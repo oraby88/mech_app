@@ -129,3 +129,27 @@ function autoScroll() {
 
 // Start auto-scrolling
 autoScroll();
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const carousel = document.querySelector("#carouselExampleSlidesOnly");
+//     const carouselItems = document.querySelectorAll(".carousel-item");
+  
+//     carousel.addEventListener("slid.bs.carousel", function () {
+//       // Remove 'active' class from all items
+//       carouselItems.forEach((item) => item.classList.remove("active"));
+  
+//       // Determine the next set of 4 images
+//       const activeIndex = [...carouselItems].findIndex((item) =>
+//         item.classList.contains("active")
+//       );
+  
+//       // Activate the next 4 images
+//       for (let i = activeIndex; i < activeIndex + 4; i++) {
+//         const index = i % carouselItems.length; // Wrap around to the beginning
+//         carouselItems[index].classList.add("active");
+//       }
+//     });
+//   });
+  

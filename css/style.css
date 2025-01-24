@@ -151,7 +151,7 @@ body[dir="rtl"] .contact-btn a {
 .hero-container {
   position: relative;
   z-index: 999;
-  margin-top: 70px;
+  margin-top: 75px;
 }
 .sub-hero-container {
   display: flex;
@@ -329,8 +329,7 @@ body[dir="rtl"] .contact-btn a {
   font-weight: 500;
   width: 70%;
 }
-.hero-content p {
-}
+
 
 .cta-button {
   display: inline-block;
@@ -350,17 +349,15 @@ body[dir="rtl"] .contact-btn a {
 /* Brands Section */
 .hero-brands {
   display: flex;
-  scroll-behavior: smooth; /* For smooth scrolling */
-  gap: 10px; /* Space between images */
+  scroll-behavior: smooth; 
   padding: 20px 50px;
-  gap: 10px;
+  gap: 30px;
   width: 100%;
   height: 150px;
   justify-content: space-around;
   align-items: center;
-  /* overflow-y: hidden;
-  overflow-x: scroll; */
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
   position: relative;
 }
 .gallery-wrapper {
@@ -370,11 +367,80 @@ body[dir="rtl"] .contact-btn a {
   scroll-behavior: smooth; /* For smooth scrolling */
   width: 100%;
   justify-content: space-around;
+  will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
+  animation: auto-scroll 10s linear infinite;
+}
+.carousel{
+  padding: 0 50px;
+  text-align: center;
 }
 
+  width: 100%;
+}
+.elementor-84 .elementor-element.elementor-element-46e7a89e > .elementor-widget-container {
+  background-color: rgba(2, 1, 1, 0);
+  margin: 36px 0px 0px 0px;
+  padding: 0px 0px 33px 0px;
+}
+.elementor-element .elementor-widget-container, .elementor-element:not(:has(.elementor-widget-container)) {
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+}
+.elementor-widget-image-carousel .swiper {
+  position: static;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.elementor-84 .elementor-element.elementor-element-46e7a89e .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.elementor-widget-image-carousel .swiper-slide {
+  text-align: center;
+}
+.swiper-slide {
+  border-style: solid;
+  border-width: 0;
+  overflow: hidden;
+  transition-duration: .5s;
+  transition-property: border, background, transform;
+  will-change: transform;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+.elementor .elementor-widget:not(.elementor-widget-text-editor):not(.elementor-widget-theme-post-content) figure {
+  margin: 0;
+} */
+.carousel-inner .carousel-item {
+  transition: transform 0.5s ease-in-out; /* Smooth sliding */
+}
+.carousel-inner {
+  display: flex;
+}
 .hero-brands img {
   flex-shrink: 0; /* Prevent images from shrinking */
   /* width: 100%; */
+  
   height: fit-content; /* Maintain aspect ratio */
   object-fit: cover;
 }
@@ -390,6 +456,9 @@ body[dir="rtl"] .contact-btn a {
   /* opacity: 1; */
   max-width: 150px;
 }
+.hero-brands {
+    flex: 0 0 100%;
+  }
 /* Auto-scroll animation */
 @keyframes auto-scroll {
   0% {
@@ -421,7 +490,9 @@ body[dir="rtl"] .contact-btn a {
     flex-direction: column;
     gap: 15px;
   }
-
+  .hero-content{
+    padding: 20px 0; 
+  }
   .hero-content h1 {
     font-size: 36px;
   }
