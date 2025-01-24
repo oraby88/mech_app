@@ -35,7 +35,7 @@ body[dir="rtl"] {
   text-align: right;
   direction: rtl;
 }
-.container-xxl {
+.all-content-container {
   background-color: #ade1e5;
 }
 
@@ -801,18 +801,27 @@ body[dir="rtl"] .contact-btn a {
   border: 2px solid #707070;
   border-radius: 10px;
   padding: 120px 20px 20px 20px;
+  height: 310px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 99;
   border: 10px solid #28293E;
+  position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.serviceImg{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  height: 100%;
 }
 
 .service-card p {
@@ -832,7 +841,8 @@ body[dir="rtl"] .contact-btn a {
 
   .service-card {
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
+    padding: 120px 20px 120px 20px;
   }
 }
 /* Vision Section */
