@@ -51,7 +51,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.nav-bg{
+.nav-bg {
   background-color: #162a40;
 }
 
@@ -266,11 +266,9 @@ body[dir="rtl"] .contact-btn a {
   .contact-btn {
     margin-top: 0;
   }
-  
-
 }
 @media screen and (max-width: 768px) {
-  .sub-hero-container{
+  .sub-hero-container {
     padding: 0 20px !important;
   }
 }
@@ -279,9 +277,9 @@ body[dir="rtl"] .contact-btn a {
   color: white;
 }
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 .25rem !important;
+  box-shadow: 0 0 0 0.25rem !important;
 }
-.navbar-toggler-icon::before{
+.navbar-toggler-icon::before {
   color: white;
 }
 .navbar-toggler-icon {
@@ -291,7 +289,7 @@ body[dir="rtl"] .contact-btn a {
   width: 150px;
 } */
 
-.line{
+.line {
   margin: 20px 50px;
   border: none; /* Removes the default border */
   height: 5px; /* Adjust the thickness */
@@ -316,9 +314,9 @@ body[dir="rtl"] .contact-btn a {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.section-title{
+.section-title {
   font-size: 13px;
-  color: #00BDC7;
+  color: #00bdc7;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -329,7 +327,6 @@ body[dir="rtl"] .contact-btn a {
   font-weight: 500;
   width: 70%;
 }
-
 
 .cta-button {
   display: inline-block;
@@ -349,7 +346,7 @@ body[dir="rtl"] .contact-btn a {
 /* Brands Section */
 .hero-brands {
   display: flex;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   padding: 20px 50px;
   gap: 30px;
   width: 100%;
@@ -370,67 +367,10 @@ body[dir="rtl"] .contact-btn a {
   will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
   animation: auto-scroll 10s linear infinite;
 }
-.carousel{
+.carousel {
   padding: 0 50px;
   text-align: center;
 }
-
-  width: 100%;
-}
-.elementor-84 .elementor-element.elementor-element-46e7a89e > .elementor-widget-container {
-  background-color: rgba(2, 1, 1, 0);
-  margin: 36px 0px 0px 0px;
-  padding: 0px 0px 33px 0px;
-}
-.elementor-element .elementor-widget-container, .elementor-element:not(:has(.elementor-widget-container)) {
-  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
-}
-.elementor-widget-image-carousel .swiper {
-  position: static;
-}
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-}
-.elementor-84 .elementor-element.elementor-element-46e7a89e .swiper-wrapper {
-  display: flex;
-  align-items: center;
-}
-.swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
-}
-.elementor-widget-image-carousel .swiper-slide {
-  text-align: center;
-}
-.swiper-slide {
-  border-style: solid;
-  border-width: 0;
-  overflow: hidden;
-  transition-duration: .5s;
-  transition-property: border, background, transform;
-  will-change: transform;
-}
-.swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition-property: transform;
-}
-.elementor .elementor-widget:not(.elementor-widget-text-editor):not(.elementor-widget-theme-post-content) figure {
-  margin: 0;
-} */
 .carousel-inner .carousel-item {
   transition: transform 0.5s ease-in-out; /* Smooth sliding */
 }
@@ -440,7 +380,7 @@ body[dir="rtl"] .contact-btn a {
 .hero-brands img {
   flex-shrink: 0; /* Prevent images from shrinking */
   /* width: 100%; */
-  
+
   height: fit-content; /* Maintain aspect ratio */
   object-fit: cover;
 }
@@ -457,8 +397,14 @@ body[dir="rtl"] .contact-btn a {
   max-width: 150px;
 }
 .hero-brands {
-    flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+@media screen and (max-width: 1200px) {
+  .hero-brands::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
   }
+}
+
 /* Auto-scroll animation */
 @keyframes auto-scroll {
   0% {
@@ -490,8 +436,8 @@ body[dir="rtl"] .contact-btn a {
     flex-direction: column;
     gap: 15px;
   }
-  .hero-content{
-    padding: 20px 0; 
+  .hero-content {
+    padding: 30px 0;
   }
   .hero-content h1 {
     font-size: 36px;
@@ -500,7 +446,6 @@ body[dir="rtl"] .contact-btn a {
   .hero-brands {
     padding: 20px;
   }
-
 }
 
 /* General Section Styles */
@@ -610,7 +555,6 @@ body[dir="rtl"] .contact-btn a {
   position: relative;
 }
 
-
 .metric-box {
   text-align: center;
   flex: 1;
@@ -637,7 +581,7 @@ body[dir="rtl"] .contact-btn a {
   z-index: 999;
   padding: 200px 50px;
 }
-.background2{
+.background2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -668,7 +612,7 @@ body[dir="rtl"] .contact-btn a {
 
 .how-we-work-text p {
   font-size: 16px;
-  color: #28293E;
+  color: #28293e;
   line-height: 1.8;
 }
 
@@ -687,7 +631,7 @@ body[dir="rtl"] .contact-btn a {
 
 .step h4 {
   font-size: 42px;
-  color: #28293E;
+  color: #28293e;
   flex-shrink: 0;
   margin-bottom: 10px;
 }
@@ -704,7 +648,6 @@ body[dir="rtl"] .contact-btn a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  
   .metrics-container {
     grid-template-columns: 1fr;
     align-items: center;
@@ -731,7 +674,7 @@ body[dir="rtl"] .contact-btn a {
   position: relative;
   padding: 0 50px;
 }
-.background3{
+.background3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -830,7 +773,7 @@ body[dir="rtl"] .contact-btn a {
   .image-content img {
     max-width: 100%;
   }
-  .business-possibility-section{
+  .business-possibility-section {
     padding: 0 20px;
   }
 }
@@ -857,7 +800,7 @@ body[dir="rtl"] .contact-btn a {
   position: relative;
   z-index: 99;
 }
-.services-bigContainer{
+.services-bigContainer {
   z-index: 99;
 }
 .services-container {
@@ -878,7 +821,7 @@ body[dir="rtl"] .contact-btn a {
   align-items: center;
   justify-content: center;
   z-index: 99;
-  border: 10px solid #28293E;
+  border: 10px solid #28293e;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -887,7 +830,7 @@ body[dir="rtl"] .contact-btn a {
   transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-.serviceImg{
+.serviceImg {
   position: absolute;
   width: 100%;
   top: 0;
@@ -924,7 +867,7 @@ body[dir="rtl"] .contact-btn a {
   position: relative;
   margin-bottom: 100px;
 }
-.visionBg{
+.visionBg {
   position: absolute;
   top: 0;
   left: 0;
@@ -966,10 +909,9 @@ body[dir="rtl"] .contact-btn a {
   justify-content: center;
   align-items: center;
 }
-.image-wrapper img{
+.image-wrapper img {
   width: 100%;
 }
-
 
 .icon-overlay {
   position: absolute;
@@ -1015,7 +957,7 @@ body[dir="rtl"] .contact-btn a {
     flex-direction: column;
     text-align: center;
   }
-  .visionContent{
+  .visionContent {
     flex-direction: column;
     text-align: center;
   }
@@ -1119,8 +1061,7 @@ body[dir="rtl"] .contact-btn a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .vision-section .container{
-
+  .vision-section .container {
   }
   .content {
     flex-direction: column;
@@ -1154,7 +1095,7 @@ body[dir="rtl"] .contact-btn a {
   font-family: "Roboto", Arial, sans-serif;
   position: relative;
 }
-.mechanismBg{
+.mechanismBg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1260,7 +1201,7 @@ body[dir="rtl"] .contact-btn a {
   .mechanism-services-container {
     grid-template-columns: 1fr;
   }
-  .mechanism-help-section h2{
+  .mechanism-help-section h2 {
     font-size: 28px;
   }
 }
@@ -1283,7 +1224,7 @@ body[dir="rtl"] .contact-btn a {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
-  .contact-section{
+  .contact-section {
     padding: 0 20px;
   }
 }
@@ -1333,9 +1274,8 @@ body[dir="rtl"] .contact-btn a {
   padding: 50px 50px;
   position: relative;
   margin: 100px 0;
-  
 }
-.catBg{
+.catBg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1352,7 +1292,7 @@ body[dir="rtl"] .contact-btn a {
 
 .cta-content h2 {
   font-size: 36px;
-  color: #28293E;
+  color: #28293e;
   margin-bottom: 20px;
 }
 
@@ -1422,11 +1362,11 @@ body[dir="rtl"] .contact-btn a {
   margin: 0 auto;
   position: relative;
 }
-.linkContainer{
+.linkContainer {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1438,14 +1378,14 @@ body[dir="rtl"] .contact-btn a {
   text-align: center;
   margin-bottom: 20px;
 }
-.social-container{
+.social-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
-.social-container h3{
-  color: #28293E;;
+.social-container h3 {
+  color: #28293e;
   margin: 0;
 }
 
@@ -1468,11 +1408,11 @@ body[dir="rtl"] .contact-btn a {
 }
 
 @media screen and (max-width: 768px) {
-  .social-container{
+  .social-container {
     flex-direction: column;
     gap: 10px;
   }
-  .contact-map-section{
+  .contact-map-section {
     padding: 20px;
   }
 }
@@ -1489,7 +1429,7 @@ body[dir="rtl"] .contact-btn a {
   border-radius: 10px;
   z-index: 2;
 }
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
 }
