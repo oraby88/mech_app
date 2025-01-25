@@ -344,6 +344,9 @@ body[dir="rtl"] .contact-btn a {
 }
 
 /* Brands Section */
+.brands-container{
+  position: relative;
+}
 .hero-brands {
   display: flex;
   scroll-behavior: smooth;
@@ -354,7 +357,7 @@ body[dir="rtl"] .contact-btn a {
   justify-content: space-around;
   align-items: center;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   position: relative;
 }
 .gallery-wrapper {
@@ -399,8 +402,36 @@ body[dir="rtl"] .contact-btn a {
 .hero-brands {
   flex: 0 0 100%;
 }
-.hero-brands::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Edge */
+@media screen and (max-width: 1200px) {
+  .hero-brands::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.nav-btn:hover {
+  opacity: 1;
+}
+
+#prevBtn {
+  left: -75px;
+}
+
+#nextBtn {
+  right: -75px;
 }
 
 /* Auto-scroll animation */
